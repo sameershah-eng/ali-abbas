@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-arabic: 'IBM Plex Sans Arabic', system-ui, sans-serif;
+    --font-urdu: 'Noto Nastaliq Urdu', system-ui, serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F4F3F8;
+    color: #141416;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  [dir="rtl"] {
+    font-family: var(--font-arabic);
+  }
+
+  [lang="ur"] {
+    font-family: var(--font-urdu);
+  }
+}
+
+.font-serif-display {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+}
+
+.font-mono-numbers {
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-mono);
+}
+
+/* Attachment Dashboard Theme Colors & Gradients */
+.bg-theme-purple {
+  background-color: #7C5CFC;
+}
+
+.text-theme-purple {
+  color: #7C5CFC;
+}
+
+.bg-thermal-gradient {
+  background: linear-gradient(135deg, #7C5CFC 0%, #6366F1 50%, #8B5CF6 100%);
+}
+
+.text-thermal-gradient {
+  background: linear-gradient(135deg, #7C5CFC 0%, #6366F1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Pastel Cards from Attachment */
+.bg-pastel-peach {
+  background-color: #FEEFD8;
+}
+
+.bg-pastel-blue {
+  background-color: #DCEBFE;
+}
+
+.bg-pastel-lavender {
+  background-color: #EFF0F6;
+}
+
+.bg-pastel-mint {
+  background-color: #E2F7EB;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2E1EA;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CAC8D6;
+}
+
+/* Print styling for quotes */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}

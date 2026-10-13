@@ -1,0 +1,6 @@
+{
+  "name": "Thermiq",
+  "description": "AI customer-communication and operations platform for HVAC & Refrigeration businesses in Saudi Arabia & GCC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
